@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔬Science Project🧪</title>
+    <style>
+
+@font-face {
+            font-family: Vazir;
+            src: 
+                url('/font/vazir/Vazir.woff') format('woff'),
+                url('/font/vazir/Vazir.woff2') format('woff2');
+        }
+*{
+    box-sizing: border-box;
+    font-family: Vazir;
+}
+
+body{
+    background-color: rgb(209, 208, 208);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.box {
+    width: 300px;
+    height: 200px;
+    background-color: #452fc2;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 208, 0);
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transform: scale(0.98);
+}
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    min-height: 100vh;
+}
+.header {
+    width: 100%;
+    height: 120px;
+    background-color: #505050;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.header h1 {
+    color: orange;
+    font-size: 30px;
+    text-align: center;
+    flex: 1;
+}
+
+.side-video {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: static;
+    margin-bottom: 0px;
+}
+h2 a{
+    color: rgb(255, 208, 0);
+    text-decoration: none;
+}
+.panel{
+    background-repeat: no-repeat;
+    height: 60vh;
+    border-radius: 50px;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    position: relative;
+    transition: flex 1s ease-in ;
+    
+
+}
+
+
+
+.panel.active{
+    flex: 5;
+}
+
+.contioner{
+    display: flex;
+    width: 90vw;
+    transform: translateY(-250px);
+}
+.click_photo{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -250px; 
+}
+.natije{
+    width: 300px;
+    height: 200px;
+    background-color: #452fc2;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 208, 0);
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transform: scale(0.98);
+}
+/* @media (max-width : 480px) {
+    
+    .panel:nth-of-type(8),
+    .panel:nth-of-type(7),
+    .panel:nth-of-type(6),
+    .panel:nth-of-type(5),
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(3),
+    .panel:nth-of-type(2){
+        display: none;
+    }
+} */
+ 
+/* تنظیمات ریسپانسیو */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* تبلت */
+@media (max-width: 992px) {
+
+    .container2 {
+        flex-wrap: wrap;
+        min-height: auto;
+        padding: 30px 10px;
+        gap: 10px;
+    }
+
+    .box,
+    .natije {
+        width: 45%;
+        height: 160px;
+    }
+
+    .contioner {
+        width: 95%;
+        margin: auto;
+        transform: translateY(-100px);
+    }
+
+    .panel {
+        height: 45vh;
+    }
+
+    .header h1 {
+        font-size: 23px;
+    }
+}
+
+/* موبایل */
+@media (max-width: 600px) {
+
+    .header {
+        height: auto;
+        min-height: 90px;
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .side-video {
+        width: 55px;
+        height: 55px;
+    }
+
+    .container2 {
+        flex-direction: column;
+        padding: 20px 10px;
+        gap: 12px;
+    }
+
+    .box,
+    .natije {
+        width: 90%;
+        height: 110px;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .contioner {
+        width: 95%;
+        margin: 20px auto;
+        transform: none;
+        flex-direction: column;
+    }
+
+    .panel {
+        flex: none;
+        width: 100%;
+        height: 100px;
+        margin: 5px 0;
+        border-radius: 15px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .panel.active {
+        flex: none;
+        height: 180px;
+    }
+
+    h3 {
+        position: static;
+        text-align: center;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .click_photo {
+        position: static;
+        margin: 15px 0;
+        text-align: center;
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <video class="side-video" autoplay muted loop>
+            <source src="/image/Screen Recording 2026-11-03 141459.mp4" type="video/mp4">
+        </video>
+
+        <h1>مقایسه بازدهی و میزان آلودگی خودروهای برقی با بنزینی</h1>
+
+        <video class="side-video" autoplay muted loop>
+            <source src="/image/Screen Recording 2026-11-03 141459.mp4" type="video/mp4">
+        </video>
+    </header>
+
+
+<h3>با کلیک بر روی موضوعات زیر 👇 توضیحات مربوطه را مشاهده کنید </h3>
+
+    <div class="container2">
+        <div class="natije"> <h2 ><a href="./co nclusion.html">نتیجه</a> </h2> </div>
+        <div class="box"> <h2> <a href="./elctric_car or car.html">مقایسه <=></a> </h2> </div>
+        <div class="box"> <h2> <a href="./car.html">ماشین بنزینی چیست؟</a> </h2> </div>
+        <div class="box"> <h2 ><a href="./Electric_car.html">ماشین برقی چیست؟</a> </h2> </div>
+    </div>
+
+    
+<div class="click_photo"><h3>می‌توانید با کلیک بر روی عکس ها👇 آن ها رو کامل مشاهده کنید</h3></div>
+    
+    
+    <div class="contioner">
+        <div class="panel active" style="background-color: #154124; background-image: url(/image/car11.png); opacity: 0.8;">
+            <h3></h3></h3>
+        </div>
+         <div class="panel" style="background-color: #e7f71086; background-image: url(./image/car3.webp);">
+            <h3></h3>
+        </div>
+        <div class="panel" style="background-color: #999999; background-image: url(/image/car14.webp);">
+            <h3></h3>
+        </div>
+        <div class="panel" style="background-image: url(/image/car4.webp);">
+            <h3></h3>
+        </div>
+        <div class="panel" style="background-color: #2fbb8194; background-image: url(/image/car13.jpg);opacity: 0.8;">
+            <h3></h3>
+        </div>
+        <div class="panel" style="background-image: url(/image/car12.webp);">
+            <h3></h3>
+        </div>
+        <div class="panel" style="background-image: url(/image/car7.jpg);">
+            <h3></h3>
+        </div>
+        <div class="panel" style=" background-image: url(/image/car6.jpg);">
+            <h3></h3>
+        </div>
+    </div>
+
+    
+
+    <script src="/1project.js"></script>
+</body>
+</html>
